@@ -1,12 +1,15 @@
 {
-  "name": "electron-quick-start",
+  "name": "padelstats",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electron/electron-quick-start.git"
+  },
   "keywords": [
     "Electron",
     "quick",
@@ -14,9 +17,13 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "Marco",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^21.1.1"
-  }
+    "electron": "^21.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/electron/electron-quick-start/issues"
+  },
+  "homepage": "https://github.com/electron/electron-quick-start#readme"
 }
