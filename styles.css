@@ -1,3 +1,56 @@
-/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap');*{
+margin: 0;
+top: 0;
+left: 0;
+padding: 0;
+}
 
-/* Add styles here to customize the appearance of your app */
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    justify-content: center;
+
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #181818;
+    padding: 1rem;
+}
+#stats{
+    color: #1657FF;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    
+}
+#padelballtitle{
+    width: 5rem;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 80vh;
+    border-radius: 40px;
+    background-color: #BACCFD;
+    box-shadow: 2px 2px 20px 0px #181818;
+}
+
+#newMatch{
+    background-color: #1657FF;
+    color: white;
+    padding: 2rem;
+    font-size: 1.25rem;
+    border-radius: 20px;
+}
