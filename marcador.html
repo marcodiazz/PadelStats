@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"> -->
+    <link href="./styles.css" rel="stylesheet">
+    <title>PADEL STATS</title>
+  </head>
+  <body>
+
+    <a href=index.html id=title>
+      <p>PADEL</p>
+      <img id="padelballtitle" src="img/padelball.png" alt=""></img>
+      <p id="stats">STATS</p>
+    </a>
+    <div id="content">
+        <div id="pareja1">
+            <div class="tarjeta-jugador" id="jugador1"></div>
+            <div class="tarjeta-jugador" id="jugador2"></div>
+        </div>
+        <div id="ajustes">
+            <div id="marcador">0 - 0</div>
+        </div>
+        <div id="pareja2">
+            <div class="tarjeta-jugador" id="jugador3"></div>
+            <div class="tarjeta-jugador" id="jugador4"></div>
+        </div>
+      
+
+
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>

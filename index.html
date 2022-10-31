@@ -3,31 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"> -->
     <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
+    <title>PADEL STATS</title>
   </head>
   <body>
 
     <div id=title>
-      <h1>PADEL</h1>
-      <img id="padelballtitle" src="/img/padelball.png" alt=""></img>
-      <h1 id="stats">STATS</h1>
+      <p>PADEL</p>
+      <img id="padelballtitle" src="img/padelball.png" alt=""></img>
+      <p id="stats">STATS</p>
     </div>
     <div id="content">
       <div id="menu">
-      <div id="menu-pareja">
-        <div class="pareja" id="pareja1">
-          <input class="input" id="jugador1" type="text">Jugador 1</input>
-          <input class="input" id="jugador2" type="text">Jugador 2</input>
-        </div>
-        <div class="pareja" id="pareja2">
-          <input class="input" id="jugador3" type="text">Jugador 3</input>
-          <input class="input" id="jugador4" type="text">Jugador 4</input>
-        </div>
+        <!-- <h1>crea un nuevo partido</h1> -->
+        <div id="menu-pareja">      
+          <div class="pareja" id="pareja1">
+            <input class="input" id="jugador1" type="text" placeholder="Jugador 1"></input>
+            <input class="input" id="jugador2" type="text" placeholder="Jugador 2"></input>
+          </div>
+          <div id="line"></div>
+          <div class="pareja" id="pareja2">
+            <input class="input" id="jugador3" type="text" placeholder="Jugador 3"></input>
+            <input class="input" id="jugador4" type="text" placeholder="Jugador 4"></input>
+          </div>
       </div>
 
-        <div id="newMatch">Nuevo Partido</div>
+        <button onclick="returnText()" id="newMatch">Nuevo Partido</button>
       </div>
     </div>
 
