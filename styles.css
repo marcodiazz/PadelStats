@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap');*{
-margin: 0;
-top: 0;
-left: 0;
-padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  top: 0;
+  left: 0;
+  padding: 0;
 }
 
 body{
@@ -37,20 +41,60 @@ body{
     align-items: center;
 }
 #menu{
-    display: flex;
+    display: block;
     justify-content: center;
-    align-items: center;
     width: 70%;
     height: 80vh;
     border-radius: 40px;
-    background-color: #BACCFD;
+    background-color: #22356D;
     box-shadow: 2px 2px 20px 0px #181818;
 }
 
+#menu-pareja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45%;
+    padding-inline: 10rem;
+    padding-block: 5rem;
+
+}
+.pareja{
+    display: block;
+    padding-block: 5rem;
+}
+
+.input{
+    font-size: 1rem;
+    font-size: max(16px, 1em);
+    padding: 1.5rem;
+    margin: 1rem;
+    color: #181818;
+    background-color: #fff;
+    border: 3px solid #f44a5a;
+    border-radius: 4px;
+    resize: vertical;
+    transition: 0.3s ease-in-out;
+
+}
+
+.input:focus{
+padding-inline: 1.8rem;
+}
+.input:not(textarea) {
+    line-height: 1;
+    height: 2.25rem;
+  }
 #newMatch{
-    background-color: #1657FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f44a5a;
     color: white;
     padding: 2rem;
     font-size: 1.25rem;
     border-radius: 20px;
+    max-width: 30%;
+    margin: auto;
+
 }
