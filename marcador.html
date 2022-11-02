@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"> -->
-    <link href="./styles.css" rel="stylesheet">
+    <link href="./stylesmarcador.css" rel="stylesheet">
     <title>PADEL STATS</title>
   </head>
   <body>
@@ -15,14 +15,29 @@
       <p id="stats">STATS</p>
     </a>
     <div id="content">
-        <div id="pareja1">
-            <div class="tarjeta-jugador" id="jugador1"></div>
-            <div class="tarjeta-jugador" id="jugador2"></div>
+        <div class="pareja" id="pareja1">
+            <div class="tarjeta-jugador" id="jugador1">
+              <p id="nombre1"></p>
+            </div>
+            <div class="tarjeta-jugador" id="jugador2">
+              <p id="nombre2"></p>
+            </div>
         </div>
         <div id="ajustes">
-            <div id="marcador">0 - 0</div>
+            <div id="marcador-juego">
+              <div id="marcador-puntos">0 - 0</div>
+            </div>
+            <div id="marcador-sets">
+              <p id="titulo-set1">SET 1</p>
+              <p class="set" id="set1"> 0 | 0 </p>
+              <p id="titulo-set2">SET 2</p>
+              <p class="set" id="set2"> 0 | 0</p>
+              <p id="titulo-set3">SET 3</p>
+              <p class="set" id="set3"> 0 | 0</p>
+             </div>
+            
         </div>
-        <div id="pareja2">
+        <div class="pareja" id="pareja2">
             <div class="tarjeta-jugador" id="jugador3"></div>
             <div class="tarjeta-jugador" id="jugador4"></div>
         </div>
