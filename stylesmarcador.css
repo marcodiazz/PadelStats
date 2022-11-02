@@ -10,11 +10,14 @@
 }
 
 body{
-    background-color: white;
+    /* background-color: white; */
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     justify-content: center;
-
+    /* background-image: url('./img/fondoDegradado.jpg'); */
+    /* background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat; */
 }
 
 #title{

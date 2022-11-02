@@ -9,11 +9,20 @@
   padding: 0;
 }
 
+html { 
+    background: url('./img/fondo2.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 body{
-    background-color: white;
+    /* background-color: white; */
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     justify-content: center;
+
 
 }
 
@@ -22,15 +31,17 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 5rem;
-    font-weight: 400;
-    color: #181818;
-    padding: 1rem;
+    font-weight: 700;
+    color: white;
+    padding: 0.3rem;
     text-decoration: none;
 }
 #stats{
-    color: #1657FF;
+    color: #f44a5a;
     font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 1) ;
+
     
 }
 #padelballtitle{
@@ -45,16 +56,24 @@ body{
     display: block;
     justify-content: center;
     width: 70%;
-    height: 80vh;
+    /* height: 80vh; */
     border-radius: 40px;
-    background-color: #22356D;
-    box-shadow: 2px 2px 20px 0px #181818;
+    /* background-color: #22356D; */
+    /* background: #22356db7; */
+    /* background: rgba(51, 51, 51, 0.5); */
+    /* background: #313a5da3; */
+    background: #18181879;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 2rem;
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 #menu h1{
     color: white;
     text-align: center;
     width: 100%;
-    margin-top: 3rem;
     font-weight: 400;
 }
 
@@ -64,22 +83,28 @@ body{
     align-items: center;
     gap: 20%;
     padding-inline: 10rem;
+    
 
 }
+.pareja h2{
+    color: white;
+    text-align: center;
+}
 #line{
-    height: 20rem;
+    height: 18rem;
     border: 3px solid white;
+    border-radius: 5px;
  }
 .pareja{
     display: block;
-    padding-block: 5rem;
+    padding-block: 2rem;
 }
 
 .input{
     font-size: 1rem;
     font-size: max(16px, 1em);
     padding: 1.5rem;
-    margin-block: 3rem;
+    margin-block: 2rem;
     color: white;
     background-color: #f44a5a;
     border: 4px solid #f44a5a;
@@ -102,7 +127,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #69dfe2;
+    background: linear-gradient(45deg, #8E2DE2 0%, #4A00E0 100%);
     color: white;
     padding: 2rem;
     font-size: 1.25rem;
@@ -110,7 +135,9 @@ body{
     border-radius: 20px;
     max-width: 30%;
     margin: auto;
-    box-shadow: 2px 2px 20px 0px #181818;
+    margin-block: 2rem;
+    border: none;
+    box-shadow: 2px 2px 20px 0px #181818; 
 
 
 }
