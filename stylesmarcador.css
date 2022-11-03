@@ -55,7 +55,7 @@ body{
 .pareja{
     display: block;
     width: 33%;
-    height: 50vh; 
+    /* height: 50vh;  */
     background: #18181879;
     border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
