@@ -1,6 +1,9 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const { pbkdf2 } = require('crypto');
+const {app, BrowserWindow, ipcMain} = require('electron')
 const path = require('path')
+
+let player1, player2, player3, player4;
 
 function createWindow () {
   // Create the browser window.
@@ -19,6 +22,17 @@ function createWindow () {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+}
+
+function handleSetPlayers (event, jugador1, jugador2, jugador3, jugador4) {
+  const webContents = event.sender
+  const win = BrowserWindow.fromWebContents(webContents)
+  player1 = jugador1;
+  player2 = jugador2;
+  player3 = jugador3;
+  player4 = jugador4;
+  mainWindow.webContents.send('printPlayers', player1, player2, player3, player4)
+
 }
 
 // This method will be called when Electron has finished
@@ -44,4 +58,6 @@ app.on('window-all-closed', function () {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 
+ipcMain.on('set-players', handleSetPlayers)
+console.log(player1, player2, player3, player4)
 
