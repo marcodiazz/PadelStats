@@ -9,7 +9,10 @@
 
  contextBridge.exposeInMainWorld('electronAPI', {
     setPlayers: (jugador1, jugador2, jugador3, jugador4) => ipcRenderer.send('set-players', jugador1, jugador2, jugador3, jugador4),
-    printPlayers: (jugador1, jugador2, jugador3, jugador4) => ipcRenderer.on('printPlayers', jugador1, jugador2, jugador3, jugador4),
+    printPlayers: (jugador1, jugador2, jugador3, jugador4) => ipcRenderer.on('printPlayers', (event, args) =>{
+      console.log(jugador1, jugador2, jugador3, jugador4);
+    }
+    ),
  })
 
 window.addEventListener('DOMContentLoaded', () => {

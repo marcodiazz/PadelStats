@@ -8,13 +8,12 @@
 let jugador1, jugador2, jugador3, jugador4;
 
 function getPlayers(){
-  console.log("jugador1, jugador2");
   window.electronAPI.printPlayers(jugador1, jugador2, jugador3, jugador4)
   document.getElementById("nombre1").innerHTML = jugador1;
   document.getElementById("nombre2").innerHTML = jugador2;
   document.getElementById("nombre3").innerHTML = jugador3;
   document.getElementById("nombre4").innerHTML = jugador4;
-  
+  console.log(jugador1, jugador2, jugador3, jugador4);
 }
 
   // printPlayers(jugador1, jugador2, jugador3, jugador4);

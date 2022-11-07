@@ -31,7 +31,8 @@ function handleSetPlayers (event, jugador1, jugador2, jugador3, jugador4) {
   player2 = jugador2;
   player3 = jugador3;
   player4 = jugador4;
-  mainWindow.webContents.send('printPlayers', player1, player2, player3, player4)
+  event.reply('printPlayers', player1, player2, player3, player4);
+  // mainWindow.webContents.send('printPlayers', player1, player2, player3, player4)
 
 }
 
