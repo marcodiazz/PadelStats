@@ -8,7 +8,7 @@
 let jugador1, jugador2, jugador3, jugador4;
 
 function getPlayers(){
-  window.electronAPI.printPlayers(jugador1, jugador2, jugador3, jugador4)
+  window.api.printPlayers(jugador1, jugador2, jugador3, jugador4)
   document.getElementById("nombre1").innerHTML = jugador1;
   document.getElementById("nombre2").innerHTML = jugador2;
   document.getElementById("nombre3").innerHTML = jugador3;
@@ -24,10 +24,12 @@ function getPlayers(){
     jugador2 = document.getElementById("jugador2").value;
     jugador3 = document.getElementById("jugador3").value;
     jugador4 = document.getElementById("jugador4").value;
-    window.electronAPI.setPlayers(jugador1,jugador2, jugador3, jugador4);
+    console.log(jugador1, jugador2, jugador3, jugador4);
 
-    window.location.href = "marcador.html";
-    getPlayers()
+    // window.electronAPI.setPlayers(jugador1,jugador2, jugador3, jugador4);
+
+    // window.location.href = "marcador.html";
+    // getPlayers()
     
   }
 

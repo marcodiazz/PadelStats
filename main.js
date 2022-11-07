@@ -60,5 +60,5 @@ app.on('window-all-closed', function () {
 // code. You can also put them in separate files and require them here.
 
 ipcMain.on('set-players', handleSetPlayers)
-console.log(player1, player2, player3, player4)
+// console.log(player1, player2, player3, player4)
 
