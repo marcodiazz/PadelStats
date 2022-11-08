@@ -8,12 +8,24 @@
  const { contextBridge, ipcRenderer} = require('electron')
 
  contextBridge.exposeInMainWorld('electronAPI', {
-    setPlayers: (jugador1, jugador2, jugador3, jugador4) => ipcRenderer.send('set-players', jugador1, jugador2, jugador3, jugador4),
-    printPlayers: (jugador1, jugador2, jugador3, jugador4) => ipcRenderer.on('printPlayers', (event, args) =>{
-      console.log(jugador1, jugador2, jugador3, jugador4);
-    }
-    ),
- })
+    setPlayers: (data) => {
+      console.log(data)
+      ipcRenderer.send('set-players', data)
+    },
+    
+    // printPlayers: () => {
+    //   // La vista quiere recibir sus putos datos
+    //   ipcRenderer.on('printPlayers', (event, data) => {
+    //     console.log(data);
+        
+    //   });
+    // }
+  })
+
+      
+
+  
+
 
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {

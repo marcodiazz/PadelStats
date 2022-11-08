@@ -24,15 +24,15 @@ function createWindow () {
   // mainWindow.webContents.openDevTools()
 }
 
-function handleSetPlayers (event, jugador1, jugador2, jugador3, jugador4) {
+function handleSetPlayers (event, data) {
   const webContents = event.sender
   const win = BrowserWindow.fromWebContents(webContents)
-  player1 = jugador1;
-  player2 = jugador2;
-  player3 = jugador3;
-  player4 = jugador4;
-  event.reply('printPlayers', player1, player2, player3, player4);
-  // mainWindow.webContents.send('printPlayers', player1, player2, player3, player4)
+  player1 = data.jugador1;
+  player2 = data.jugador2;
+  player3 = data.jugador3;
+  player4 = data.jugador4;
+  event.reply('printPlayers', {player1, player2, player3, player4});
+  
 
 }
 
